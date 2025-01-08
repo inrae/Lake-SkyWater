@@ -8,10 +8,6 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lsw"
 version = "0.0.1"
-authors = [
-    {name = "Arthur Coqué", email = "arthur.coque@inrae.fr"},
-]
-readme = "README.md"
 dependencies = [
     "kaleido",
     "numpy",
@@ -24,6 +20,18 @@ dependencies = [
     "typer",
     "xarray",
 ]
+authors = [
+    {name = "Arthur Coqué", email = "arthur.coque@inrae.fr"},
+]
+readme = "README.md"
+classifiers = [
+    "Programmming Language :: Python",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[project.urls]
+Repository = "https://github.com/inrae/Lake-SkyWater/tree/main/code"
 
 [project.scripts]
 lsw = "lsw.cli:app"
